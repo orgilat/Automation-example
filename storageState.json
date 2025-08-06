@@ -1,0 +1,95 @@
+{
+  "cookies": [
+    {
+      "name": "keep_alive",
+      "value": "e7d593e7-409e-47d6-bfb5-cc3e80ac6ec6",
+      "domain": "drpt-external-dev.myshopify.com",
+      "path": "/",
+      "expires": 1754493672.361788,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Strict"
+    },
+    {
+      "name": "localization",
+      "value": "IL",
+      "domain": "drpt-external-dev.myshopify.com",
+      "path": "/",
+      "expires": 1786027872.361849,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "cart_currency",
+      "value": "GBP",
+      "domain": "drpt-external-dev.myshopify.com",
+      "path": "/",
+      "expires": 1755701472.361871,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_shopify_y",
+      "value": "00b03b9d-1ac3-4e42-a882-24b385cd2ba6",
+      "domain": ".drpt-external-dev.myshopify.com",
+      "path": "/",
+      "expires": 1786049472.361888,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_shopify_s",
+      "value": "4f1567a7-0e97-48fa-bd90-5a105b2985ca",
+      "domain": ".drpt-external-dev.myshopify.com",
+      "path": "/",
+      "expires": 1754493672.361912,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_tracking_consent",
+      "value": "3.AMPS_ILM_f_f_0Rn9yCTDSZubSej5plCRMA",
+      "domain": ".drpt-external-dev.myshopify.com",
+      "path": "/",
+      "expires": 1786027871.383888,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_orig_referrer",
+      "value": "",
+      "domain": ".drpt-external-dev.myshopify.com",
+      "path": "/",
+      "expires": 1755701471.383902,
+      "httpOnly": true,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_landing_page",
+      "value": "%2Fpassword",
+      "domain": ".drpt-external-dev.myshopify.com",
+      "path": "/",
+      "expires": 1755701471.383915,
+      "httpOnly": true,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_shopify_essential",
+      "value": ":AZh_3WRFAAEAr6-cULLuhVlxNSKFTes3PwDSoUjZvQgSnTah2511sO1IU_q_wKXajpl9_8PNXmXPWbTDkD0khCdrYsTNNfvCBuNBaWaKjc8gk86tCPURtgykJZiZaTmFbO256Ed7BLv3jDU56wL05R30OmdWPqMR7bs_C33A7-cub2wxSt-2pKaGIyKmjlKR1_rf2Sw7eeNIyuiN7i1gISmLWIVfN6Tw_2JdwjYE9BHPmpv8ybpgW124ECiRGX0aAKdIkHJaIoK72h9hooeqDFzbJVUxHCXS:",
+      "domain": "drpt-external-dev.myshopify.com",
+      "path": "/",
+      "expires": 1786027871.977581,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": []
+}
