@@ -44,14 +44,6 @@ docker run --rm -v "$(pwd)/allure-report:/app/allure-report" dropit-tests
 ### 🧠 Page Object Model (POM)
 All UI flows use the **Page Object Model** design pattern. Each page ( ProductPage, CartPage , CatalogPage , CheckoutPage ) encapsulates locators and actions to keep tests clean and modular.
 
-## 🐾petClient.ts
-Contains three main functions:
-
- createPet(pet) – Adds a new pet to the store.
-
- updatePet(pet) – Updates an existing pet (e.g., name, status, etc.).
-
- findPetsByStatus(status) – Searches for pets based on their status (e.g., available, sold, etc.).
 
 ### 💡 globalSetup
 The `global-setup.ts` script is executed **before the test suite** runs. It:
@@ -65,7 +57,13 @@ Playwright uses this saved state to start each test already authenticated — sa
 ## 🔌 API Layer – `PetClient`
 The `PetClient` is a modular class-based client for testing against the **Petstore API**.
 
-This separation of concerns keeps API tests clean and scalable.
+Contains three main functions:
+
+ createPet(pet) – Adds a new pet to the store.
+
+ updatePet(pet) – Updates an existing pet (e.g., name, status, etc.).
+
+ findPetsByStatus(status) – Searches for pets based on their status (e.g., available, sold, etc.).
 
 ---
 
