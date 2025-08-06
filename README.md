@@ -42,9 +42,9 @@ docker run --rm -v "$(pwd)/allure-report:/app/allure-report" dropit-tests
 ## ⚙️ Test Design & Architecture
 
 ### 🧠 Page Object Model (POM)
-All UI flows use the **Page Object Model** design pattern. Each page (e.g. ProductPage, CartPage) encapsulates locators and actions to keep tests clean and modular.
+All UI flows use the **Page Object Model** design pattern. Each page ( ProductPage, CartPage , CatalogPage , CheckoutPage ) encapsulates locators and actions to keep tests clean and modular.
 
-### petClient.ts
+## 🐾petClient.ts
 Contains three main functions:
 
 #createPet(pet) – Adds a new pet to the store.
