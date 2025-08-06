@@ -47,11 +47,11 @@ All UI flows use the **Page Object Model** design pattern. Each page ( ProductPa
 ## 🐾petClient.ts
 Contains three main functions:
 
-#createPet(pet) – Adds a new pet to the store.
+# createPet(pet) – Adds a new pet to the store.
 
-#updatePet(pet) – Updates an existing pet (e.g., name, status, etc.).
+# updatePet(pet) – Updates an existing pet (e.g., name, status, etc.).
 
-#findPetsByStatus(status) – Searches for pets based on their status (e.g., available, sold, etc.).
+# findPetsByStatus(status) – Searches for pets based on their status (e.g., available, sold, etc.).
 
 ### 💡 globalSetup
 The `global-setup.ts` script is executed **before the test suite** runs. It:
