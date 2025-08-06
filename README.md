@@ -33,8 +33,8 @@ A full-featured automation framework built with **Playwright + TypeScript**, des
 For convenience, a fully configured Dockerfile is included for users who prefer to run the tests in an isolated environment without installing dependencies locally.
 
 ✅ The entire test suite was successfully executed inside Docker, including Allure report generation.
-📸 A screenshot of the successful run is provided in the repository under the name docker-run.
-### Build Docker image
+###📸 A screenshot of the successful run is provided in the repository under the name docker-run.
+## Build Docker image
 docker build -t dropit-tests .
 
 ### Run tests inside Docker and mount Allure report
