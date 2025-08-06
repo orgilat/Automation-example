@@ -54,7 +54,7 @@ The `global-setup.ts` script is executed **before the test suite** runs. It:
 Playwright uses this saved state to start each test already authenticated — saving time and avoiding repetition.
 
 ### 🔌 API Layer – `PetClient`
-The `PetClient` is a modular class-based client for testing against the **Petstore API**. It includes.
+The `PetClient` is a modular class-based client for testing against the **Petstore API**.
 
 This separation of concerns keeps API tests clean and scalable.
 
