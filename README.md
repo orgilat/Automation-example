@@ -12,7 +12,7 @@ A full-featured automation framework built with **Playwright + TypeScript**, des
 | **TypeScript**   | Strongly typed superset of JavaScript used for scalability and maintainability |
 | **Allure Report**| Rich test reporting framework that generates visual test results with screenshots, videos, and traces - Two screenshots showing successful test execution and the corresponding Allure report output are included in the repository. |
 | **Winston Logger** |  Winston configured only in the Page Object Model classes for structured, leveled logs. |
-| **Page Object Model** |Reusable classes in `tests/pages/ |
+| **Page Object Model** |Reusable classes in `tests/pages/` |
 | **globalSetup (Playwright)** | global-setup.ts` logs into the admin panel and saves `storageState.json` for UI tests. |
 | **PetClient (Custom API Layer)** | Class-based HTTP client built using Playwright’s APIRequestContext |
 | **Docker**       | 	Encapsulates the entire environment (Node, Playwright, Allure) to allow consistent execution across machines and CI agents.  |
