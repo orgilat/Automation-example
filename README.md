@@ -18,7 +18,7 @@ A full-featured automation framework built with **Playwright + TypeScript**, des
 
 
 ---
-## 🧠 Project Structure
+# 🧠 Project Structure
 
 ```bash
 Dropit-Automation-test/
@@ -40,8 +40,19 @@ Dropit-Automation-test/
 ├── playwright.config.ts
 ├── Dockerfile
 ---
----
-## 4. Local Execution
+
+
+
+
+
+
+
+
+
+
+
+
+#  Local Execution
 
 ```bash
 # Run API & UI tests\ npx playwright test
