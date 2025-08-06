@@ -18,39 +18,6 @@ A full-featured automation framework built with **Playwright + TypeScript**, des
 
 
 ---
-# 🧠 Project Structure
-
-```bash
-Dropit-Automation-test/
-├── tests/
-│   ├── ui/
-│   │   ├── cart.spec.ts
-│   │   ├── product.spec.ts
-│   ├── api/
-│   │   └── petstore.spec.ts
-├── pages/
-│   ├── ProductPage.ts
-│   ├── CartPage.ts
-├── utils/
-│   ├── logger.ts
-│   └── helpers.ts
-├── clients/
-│   └── PetClient.ts
-├── global-setup.ts
-├── playwright.config.ts
-├── Dockerfile
----
-
-
-
-
-
-
-
-
-
-
-
 
 #  Local Execution
 
@@ -87,10 +54,7 @@ The `global-setup.ts` script is executed **before the test suite** runs. It:
 Playwright uses this saved state to start each test already authenticated — saving time and avoiding repetition.
 
 ### 🔌 API Layer – `PetClient`
-The `PetClient` is a modular class-based client for testing against the **Petstore API**. It includes:
-- `POST` - Create a new pet
-- `PUT` - Update a pet’s name
-- `GET` - Search pets by status
+The `PetClient` is a modular class-based client for testing against the **Petstore API**. It includes.
 
 This separation of concerns keeps API tests clean and scalable.
 
