@@ -29,22 +29,22 @@ A full-featured automation framework built with **Playwright + TypeScript**, des
 # Open the report\ npx allure open allure-report
 ```
 
-# 🐳 Docker Execution
+##3 🐳 Docker Execution
 For convenience, a fully configured Dockerfile is included for users who prefer to run the tests in an isolated environment without installing dependencies locally.
 
 ✅ The entire test suite was successfully executed inside Docker, including Allure report generation.
 📸 A screenshot of the successful run is provided in the repository under the name docker-run.
-# Build Docker image
+### Build Docker image
 docker build -t dropit-tests .
 
-# Run tests inside Docker and mount Allure report
+### Run tests inside Docker and mount Allure report
 docker run --rm -v "$(pwd)/allure-report:/app/allure-report" dropit-tests
 ## ⚙️ Test Design & Architecture
 
 ### 🧠 Page Object Model (POM)
 All UI flows use the **Page Object Model** design pattern. Each page (e.g. ProductPage, CartPage) encapsulates locators and actions to keep tests clean and modular.
 
-## petClient.ts
+### petClient.ts
 Contains three main functions:
 
 #createPet(pet) – Adds a new pet to the store.
@@ -55,14 +55,14 @@ Contains three main functions:
 
 ### 💡 globalSetup
 The `global-setup.ts` script is executed **before the test suite** runs. It:
-- Navigates to the Shopify storefront password page
-- Fills in the password (`giclao`)
-- Authenticates the session
-- Saves the browser storage state to `storageState.json`
+# Navigates to the Shopify storefront password page
+# Fills in the password (`giclao`)
+# Authenticates the session
+# Saves the browser storage state to `storageState.json`
 
 Playwright uses this saved state to start each test already authenticated — saving time and avoiding repetition.
 
-### 🔌 API Layer – `PetClient`
+## 🔌 API Layer – `PetClient`
 The `PetClient` is a modular class-based client for testing against the **Petstore API**.
 
 This separation of concerns keeps API tests clean and scalable.
