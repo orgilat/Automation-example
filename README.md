@@ -10,11 +10,11 @@ A full-featured automation framework built with **Playwright + TypeScript**, des
 |------------------|---------|
 | **Playwright**   | Modern testing framework for end-to-end browser and API testing |
 | **TypeScript**   | Strongly typed superset of JavaScript used for scalability and maintainability |
-| **Allure Report**| Rich test reporting framework that generates visual test results with screenshots, videos, and traces |
+| **Allure Report**| Rich test reporting framework that generates visual test results with screenshots, videos, and traces - Two screenshots showing successful test execution and the corresponding Allure report output are included in the repository. |
+| **Winston Logger** |  Winston configured only in the Page Object Model classes for structured, leveled logs. |
+| **Page Object Model** |Reusable classes in `tests/pages/ |
+| **globalSetup (Playwright)** | global-setup.ts` logs into the admin panel and saves `storageState.json` for UI tests. |
 | **Docker**       | 	Encapsulates the entire environment (Node, Playwright, Allure) to allow consistent execution across machines and CI agents.  |
-| **Winston Logger** | Custom logging solution for both console and file logs |
-| **GitHub Actions** | CI/CD pipeline to run tests on each push or pull request |
-| **globalSetup (Playwright)** | Pre-authentication script that saves login state before test execution |
 
 
 ---
@@ -74,7 +74,11 @@ On every push or PR to `main`, GitHub Actions will:
 5. Upload `allure-report/` as an artifact.
 
 ---
+##  Testing Scope & Summary
 
+**Results:** 5 of 5 automated tests passed.
+
+Further automation can be added upon request.
 
 
 
