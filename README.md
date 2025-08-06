@@ -39,13 +39,13 @@ docker build -t dropit-tests .
 
 ### Run tests inside Docker and mount Allure report
 docker run --rm -v "$(pwd)/allure-report:/app/allure-report" dropit-tests
-## ⚙️ Test Design & Architecture
+# ⚙️ Test Design & Architecture
 
-### 🧠 Page Object Model (POM)
+## 🧠 Page Object Model (POM)
 All UI flows use the **Page Object Model** design pattern. Each page ( ProductPage, CartPage , CatalogPage , CheckoutPage ) encapsulates locators and actions to keep tests clean and modular.
 
 
-### 💡 globalSetup
+## 💡 globalSetup
 The `global-setup.ts` script is executed **before the test suite** runs. It:
  Navigates to the Shopify storefront password page
  Fills in the password (`giclao`)
