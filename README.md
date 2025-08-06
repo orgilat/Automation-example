@@ -39,7 +39,7 @@ Dropit-Automation-test/
 ├── global-setup.ts
 ├── playwright.config.ts
 ├── Dockerfile
-
+---
 ---
 ## 4. Local Execution
 
