@@ -29,7 +29,7 @@ A full-featured automation framework built with **Playwright + TypeScript**, des
 # Open the report\ npx allure open allure-report
 ```
 
-##3 🐳 Docker Execution
+## 🐳 Docker Execution
 For convenience, a fully configured Dockerfile is included for users who prefer to run the tests in an isolated environment without installing dependencies locally.
 
 ✅ The entire test suite was successfully executed inside Docker, including Allure report generation.
