@@ -11,14 +11,36 @@ A full-featured automation framework built with **Playwright + TypeScript**, des
 | **Playwright**   | Modern testing framework for end-to-end browser and API testing |
 | **TypeScript**   | Strongly typed superset of JavaScript used for scalability and maintainability |
 | **Allure Report**| Rich test reporting framework that generates visual test results with screenshots, videos, and traces |
-| **Docker**       | Containerized, reproducible environment for consistent execution across systems |
+| **Docker**       | 	Encapsulates the entire environment (Node, Playwright, Allure) to allow consistent execution across machines and CI agents.  |
 | **Winston Logger** | Custom logging solution for both console and file logs |
 | **GitHub Actions** | CI/CD pipeline to run tests on each push or pull request |
 | **globalSetup (Playwright)** | Pre-authentication script that saves login state before test execution |
 
 
 ---
+## 🧠 Project Structure
 
+```bash
+Dropit-Automation-test/
+├── tests/
+│   ├── ui/
+│   │   ├── cart.spec.ts
+│   │   ├── product.spec.ts
+│   ├── api/
+│   │   └── petstore.spec.ts
+├── pages/
+│   ├── ProductPage.ts
+│   ├── CartPage.ts
+├── utils/
+│   ├── logger.ts
+│   └── helpers.ts
+├── clients/
+│   └── PetClient.ts
+├── global-setup.ts
+├── playwright.config.ts
+├── Dockerfile
+
+---
 ## 4. Local Execution
 
 ```bash
@@ -30,6 +52,10 @@ A full-featured automation framework built with **Playwright + TypeScript**, des
 ```
 
 # 🐳 Docker Execution
+For convenience, a fully configured Dockerfile is included for users who prefer to run the tests in an isolated environment without installing dependencies locally.
+
+✅ The entire test suite was successfully executed inside Docker, including Allure report generation.
+📸 A screenshot of the successful run is provided in the repository under the name docker-run.
 # Build Docker image
 docker build -t dropit-tests .
 
