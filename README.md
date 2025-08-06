@@ -14,8 +14,8 @@ A full-featured automation framework built with **Playwright + TypeScript**, des
 | **Winston Logger** |  Winston configured only in the Page Object Model classes for structured, leveled logs. |
 | **Page Object Model** |Reusable classes in `tests/pages/ |
 | **globalSetup (Playwright)** | global-setup.ts` logs into the admin panel and saves `storageState.json` for UI tests. |
+| **PetClient (Custom API Layer)** | Class-based HTTP client built using Playwright’s APIRequestContext |
 | **Docker**       | 	Encapsulates the entire environment (Node, Playwright, Allure) to allow consistent execution across machines and CI agents.  |
-
 
 ---
 
@@ -43,6 +43,15 @@ docker run --rm -v "$(pwd)/allure-report:/app/allure-report" dropit-tests
 
 ### 🧠 Page Object Model (POM)
 All UI flows use the **Page Object Model** design pattern. Each page (e.g. ProductPage, CartPage) encapsulates locators and actions to keep tests clean and modular.
+
+## petClient.ts
+Contains three main functions:
+
+#createPet(pet) – Adds a new pet to the store.
+
+#updatePet(pet) – Updates an existing pet (e.g., name, status, etc.).
+
+#findPetsByStatus(status) – Searches for pets based on their status (e.g., available, sold, etc.).
 
 ### 💡 globalSetup
 The `global-setup.ts` script is executed **before the test suite** runs. It:
